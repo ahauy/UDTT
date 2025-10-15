@@ -1,11 +1,12 @@
 #include <iostream>
+#include <time.h>
 
 using namespace std;
 
 int a[100], n;
 
 void ktao() {
-
+  srand(time(NULL));
   for(int i = 0; i < n; i ++) {
     a[i] = rand() % n;
   }
